@@ -1,0 +1,20 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}
+signup page
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center"> <!-- Center the content horizontally -->
+    <div class="col-md-6"> <!-- Adjust the column width as needed -->
+      <h1 class="text-center">Welcome Sign Up Form</h1>
+      <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">Sign Up</button>
+      </form
+    </div>
+  </div>
+</div>
+{% endblock content %}

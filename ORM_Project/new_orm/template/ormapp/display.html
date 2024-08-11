@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1 align="center">Emp details</h1>
+{%if Emp_list%}
+<table border = '2px' align = 'center'>
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>CITY</th>
+    <th>SAL</th>
+    </thead>
+{% for Employee in Emp_list%}
+    <tr>
+    <td>{{Employee.id}}</td>
+    <td>{{Employee.name}}</td>
+    <td>{{Employee.city}}</td>
+    <td>{{Employee.sal}}</td>
+    </tr>
+{%endfor%}
+</table>
+{%else%}
+<h1> No Data found</h1>
+
+{%endif%}
+</body>
+</html>

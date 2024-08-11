@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD - SAURABH</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}"> <!-- css link krna under head tag-->
+</head>
+<body>
+<div class="container mt-5">
+<h1 class="text-center alert alert-danger"> Function Based View ModelForm CRUD Project</h1>
+{% block content %} {% endblock content %}
+</div>
+
+<!-- javascript link krna under body tag -->
+<script src="{% static 'enroll/js/jquery.js' %}"></script>
+<script src="{% static 'enroll/js/popper.js' %}"></script>
+<script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+</body>
+</html>
